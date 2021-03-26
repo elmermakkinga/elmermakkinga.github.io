@@ -1,0 +1,66 @@
+@font-face {
+    font-family: "Source Code Pro";
+    src: url(source-code-pro-v14-latin-regular.woff);    
+}
+@font-face {
+    font-family: "Source Code Pro Italic";
+    src: url(source-code-pro-v14-latin-italic.woff);    
+}
+body {
+    background: url("planetariumBW.png");
+    background-size: contain;
+    font-family: "Source Code Pro";
+}
+.head {    
+    font-size: 4rem;
+    text-align: center;
+    color: snow;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.body {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 700px;  
+    padding-left: 30%;
+    padding-right: 30%;      
+}
+.body > div {
+    padding: 1rem;    
+    margin-top: 1rem;    
+    background-color: rgba(255, 255, 255, 0.8);   
+}
+.fas, .fab {
+    color: snow;   
+    font-size: 2.5rem;
+    text-decoration: none;     
+}
+a:hover, .fas:hover, .fab:hover {
+    opacity: 0.7;
+  }
+a {
+    color: hotpink;
+}
+figure {
+    margin: 0;
+    padding: 0;
+}
+figcaption {
+    font-family: "Source Code Pro Italic";
+}
+.cover {
+    width: 100%;
+    height: auto;
+  }
+@media only screen and (max-device-width: 1080px) {
+    body {
+        background: url("planetariumBWrot.png")                
+    }
+    .body {
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+  }
