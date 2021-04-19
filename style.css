@@ -8,7 +8,7 @@
 }
 body {
     background: url("planetariumBW.png");
-    background-size: contain;
+    background-size: contain;    
     font-family: "Source Code Pro";
 }
 .head {    
@@ -30,6 +30,19 @@ body {
     margin-top: 1rem;    
     background-color: rgba(255, 255, 255, 0.8);   
 }
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(420px, 1fr) );
+    gap: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;       
+} 
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 1rem; 
+    padding: 1rem;    
+    text-align: justify;
+}
 .fas, .fab {
     color: snow;   
     font-size: 2.5rem;
@@ -42,7 +55,10 @@ a {
     color: hotpink;
 }
 figure {
-    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
     padding: 0;
 }
 figcaption {
@@ -62,5 +78,13 @@ figcaption {
         max-width: 90%;
         padding-left: 5%;
         padding-right: 5%;
+    }
+    .grid-container {
+        grid-template-columns: repeat( auto-fit, minmax(540px, 1fr) );
+        margin-left: 0;
+        margin-right: 0;    
+    }
+    .grid-container > div {        
+        padding: 2rem;        
     }
   }
